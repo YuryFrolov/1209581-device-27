@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Интернет-магазин «Девайс» - Моноподы для селфи</title>
 </head>
+
 <body>
 
   <header>
@@ -16,14 +18,19 @@
 
     <form type="search">
       <input type="search" placeholder="Поиск по сайту">
-      <input class="element-hidden" type="submit" placeholder="Найти"><!--Этот инпут должен быть ссылкой?-->
+      <input class="visually-hidden" type="submit" placeholder="Найти">
       <!--Поиск это форма. Формы будут разбираться на последующих лекциях-->
     </form>
 
     <ul>
-      <li><a href="#">Войти</a></li>
+      <li><a href="#">Валентин Петухов</a></li>
+      <li><a href="#">Выйти</a></li>
       <li><a href="#">Сравнить</a></li>
       <li><a href="#">Корзина</a></li>
+      <!--Не уверен, как это грамотно разметить.
+      при авторизации юзеру показывается другой список,
+      или просто для неавторизованного юзера есть элементы
+      с классом visually-hidden, например?-->
     </ul>
 
     <nav class="catalog">
@@ -48,14 +55,79 @@
   </header>
 
   <main>
-
-    <h1>Моноподы для селфи</h1>
+    <h1 class="page-title">Моноподы для селфи</h1>
 
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталог товаров</a></li>
       <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
+
+    <!--<h2>Фильтр</h2>-->
+
+    <form type="search">
+      <!--<h3>Стоимость</h3>
+    ............................-->
+      </div class="color">
+      <h3>Цвет</h3>
+      <ul>
+        <li><input type="radio" id="colorChoise1" name=""><label for="colorChoise1">Черный</label></li>
+        <li><input type="radio" id="colorChoise2" name=""><label for="colorChoise2">Белый</label></li>
+        <li><input type="radio" id="colorChoise3" name=""><label for="colorChoise3">Синий</label></li>
+        <li><input type="radio" id="colorChoise4" name=""><label for="colorChoise4">Красный</label></li>
+        <li><input type="radio" id="colorChoise5" name=""><label for="colorChoise5">Розовый</label></li>
+      </ul>
+      </div>
+
+      <div class="bluetooth">
+        <h3>Bluetooth</h3>
+        <ul>
+          <li><input type="radio" id="bluetoothChoise" name=""><label for="colorChoise1">Есть</label></li>
+          <li><input type="radio" id="bluetoothChoise" name=""><label for="colorChoise1">Нет</label></li>
+        </ul>
+      </div>
+
+      <div class="submit">
+        <button type="submit">Показать</button>
+      </div>
+
+    </form>
+
+    <section class="products">
+      <ol class="products-list">
+        <li class="product-item">
+          <arcticle>
+            <img src="https://via.placeholder.com/360x380" alt="Любительская селфи-палка">
+            <p class="product-name">Любительская селфи-палка</p>
+            <p class="product-price">500 руб.</p>
+          </arcticle>
+        </li>
+        <li class="product-item">
+          <arcticle>
+            <img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка">
+            <p class="product-name">Профессиональная селфи-палка</p>
+            <p class="product-price">1 500 руб.</p>
+          </arcticle>
+        </li>
+        <li class="product-item">
+          <arcticle>
+            <img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка">
+            <p class="product-name">Непотопляемая селфи-палка</p>
+            <p class="product-price">2 500 руб.</p>
+          </arcticle>
+        </li>
+        <li class="product-item">
+          <arcticle>
+            <img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»">
+            <p class="product-name">Селфи-палка «Следуй за мной»</p>
+            <p class="product-price">4 900 руб.</p>
+          </arcticle>
+        </li>
+      </ol>
+
+    </section>
+
+
 
   </main>
 
@@ -66,7 +138,8 @@
     </div>
 
     <ul>
-      <li><a href="#">Войти</a></li>
+      <li><a href="#">Валентин Петухов</a></li>
+      <li><a href="#">Выйти</a></li>
       <li><a href="#">Сравнить</a></li>
       <li><a href="#">Корзина</a></li>
     </ul>
@@ -80,8 +153,8 @@
     </ul>
 
     <div class="tel">
-    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-    <!--[Тел.:] - это <span>?-->
+      <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      <!--[Тел.:] - это <span>?-->
     </div>
 
     <ul>
@@ -91,10 +164,11 @@
     </ul>
 
     <div class="logo-academy">
-    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" alt="Сайт HTML Academy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="" alt="Сайт HTML Academy"></a>
     </div>
 
   </footer>
 
 </body>
+
 </html>
