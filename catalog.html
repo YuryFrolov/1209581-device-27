@@ -10,10 +10,10 @@
 
 <body>
 
-  <header>
+  <header class="catalog-header">
 
     <div class="logo">
-      <a href="#"><img src="#" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
+      <a href="#"><img src="index.html" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
     </div>
 
     <form type="search">
@@ -27,17 +27,13 @@
       <li><a href="#">Выйти</a></li>
       <li><a href="#">Сравнить</a></li>
       <li><a href="#">Корзина</a></li>
-      <!--Не уверен, как это грамотно разметить.
-      при авторизации юзеру показывается другой список,
-      или просто для неавторизованного юзера есть элементы
-      с классом visually-hidden, например?-->
     </ul>
 
     <nav class="catalog">
       <h2>Каталог товаров</h2>
       <ul class="catalog-items">
         <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="">Моноподы для селфи</a></li>
         <li><a href="#">Экшн-камеры</a></li>
         <li><a href="#">Фитнес-браслеты</a></li>
         <li><a href="#">Умные часы</a></li>
@@ -54,73 +50,71 @@
 
   </header>
 
-  <main>
+  <main class="catalog-content">
     <h1 class="page-title">Моноподы для селфи</h1>
 
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталог товаров</a></li>
-      <li class="breadcrumbs-current">Моноподы для селфи</li>
+      <li class="breadcrumbs-current"><a href="">Моноподы для селфи</a></li>
     </ul>
 
     <!--<h2>Фильтр</h2>-->
-
-    <form type="search">
-      <!--<h3>Стоимость</h3>
-    ............................-->
-      </div class="color">
-      <h3>Цвет</h3>
-      <ul>
-        <li><input type="radio" id="colorChoise1" name=""><label for="colorChoise1">Черный</label></li>
-        <li><input type="radio" id="colorChoise2" name=""><label for="colorChoise2">Белый</label></li>
-        <li><input type="radio" id="colorChoise3" name=""><label for="colorChoise3">Синий</label></li>
-        <li><input type="radio" id="colorChoise4" name=""><label for="colorChoise4">Красный</label></li>
-        <li><input type="radio" id="colorChoise5" name=""><label for="colorChoise5">Розовый</label></li>
-      </ul>
-      </div>
-
-      <div class="bluetooth">
-        <h3>Bluetooth</h3>
+    <aside>
+      <form type="search">
+        <!--<h3>Стоимость</h3>-->
+        </div class="color">
+        <h3>Цвет</h3>
         <ul>
-          <li><input type="radio" id="bluetoothChoise" name=""><label for="colorChoise1">Есть</label></li>
-          <li><input type="radio" id="bluetoothChoise" name=""><label for="colorChoise1">Нет</label></li>
+          <li><input type="radio" id="color-сhoise1" name=""><label for="colorChoise1">Черный</label></li>
+          <li><input type="radio" id="color-сhoise2" name=""><label for="colorChoise2">Белый</label></li>
+          <li><input type="radio" id="color-сhoise3" name=""><label for="colorChoise3">Синий</label></li>
+          <li><input type="radio" id="color-сhoise4" name=""><label for="colorChoise4">Красный</label></li>
+          <li><input type="radio" id="color-сhoise5" name=""><label for="colorChoise5">Розовый</label></li>
         </ul>
-      </div>
+        </div>
 
-      <div class="submit">
+        <div class="bluetooth">
+          <h3>Bluetooth</h3>
+          <ul>
+            <li><input type="radio" id="bluetooth-сhoise" name=""><label for="colorChoise1">Есть</label></li>
+            <li><input type="radio" id="bluetooth-сhoise" name=""><label for="colorChoise1">Нет</label></li>
+          </ul>
+        </div>
+
         <button type="submit">Показать</button>
-      </div>
 
-    </form>
+      </form>
+    </aside>
 
     <section class="products">
       <ol class="products-list">
-        <li class="product-item">
-          <arcticle>
+        <li class="products-box">
+          <arcticle class="product-item">
             <img src="https://via.placeholder.com/360x380" alt="Любительская селфи-палка">
-            <p class="product-name">Любительская селфи-палка</p>
-            <p class="product-price">500 руб.</p>
+            <a class="products-name">Любительская селфи-палка</a>
+            <span class="products-price">500 руб.</span>
           </arcticle>
         </li>
-        <li class="product-item">
-          <arcticle>
+        <li class="products-box">
+          <arcticle class="product-item">
             <img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка">
-            <p class="product-name">Профессиональная селфи-палка</p>
-            <p class="product-price">1 500 руб.</p>
+            <a class="products-name">Профессиональная селфи-палка</a>
+            <span class="products-price">1 500 руб.</span>
           </arcticle>
         </li>
-        <li class="product-item">
-          <arcticle>
+        <li class="products-box">
+          <arcticle class="product-item">
             <img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка">
-            <p class="product-name">Непотопляемая селфи-палка</p>
-            <p class="product-price">2 500 руб.</p>
+            <a class="products-name">Непотопляемая селфи-палка</a>
+            <span class="products-price">2 500 руб.</span>
           </arcticle>
         </li>
-        <li class="product-item">
-          <arcticle>
+        <li class="products-box">
+          <arcticle class="product-item">
             <img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»">
-            <p class="product-name">Селфи-палка «Следуй за мной»</p>
-            <p class="product-price">4 900 руб.</p>
+            <a class="products-name">Селфи-палка «Следуй за мной»</a>
+            <span class="products-price">4 900 руб.</span>
           </arcticle>
         </li>
       </ol>
@@ -131,10 +125,10 @@
 
   </main>
 
-  <footer>
+  <footer class="catalog-footer">
 
     <div class="logo">
-      <a href="#"><img src="" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
+      <a href="index.html"><img src="" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
     </div>
 
     <ul>
