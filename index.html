@@ -7,16 +7,15 @@
 </head>
 
 <body>
-
+  <h1>Интернет-магазин «Девайс»</h1>
   <header class="main-header">
     <div class="logo">
-      <a href="#"><img src="#" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
+      <a><img src="#" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
     </div>
 
-    <form type="search">
+    <form class="search">
       <input type="search" placeholder="Поиск по сайту">
-      <input class="visually-hidden" type="submit" placeholder="Найти">
-      <!--Поиск это форма. Формы будут разбираться на последующих лекциях-->
+      <input class="visually-hidden" type="search" placeholder="Найти">
     </form>
 
     <ul>
@@ -25,29 +24,30 @@
       <li><a href="#">Корзина</a></li>
     </ul>
 
-    <nav class="catalog">
-      <h2>Каталог товаров</h2>
-      <ul class="catalog-items">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="catalog.html">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-        <li><a href="#">Фитнес-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <ul>
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="nav-list-item">
+          <a href="#">Доставка</a>
+          <a href="#">Гарантия</a>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
-
-      <ul>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-
     </nav>
 
   </header>
 
-  <main class="main-content">
-    <h1>Интернет-магазин «Девайс»</h1>
+  <main class="container">
+
     <section class="about-us">
 
       <h2>О нас</h2>
@@ -79,10 +79,10 @@
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer>
 
     <div class="logo">
-      <a href=""><img src="#" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
+      <a><img src="#" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
     </div>
 
     <ul>
@@ -116,7 +116,5 @@
     </div>
 
   </footer>
-
 </body>
-
 </html>
