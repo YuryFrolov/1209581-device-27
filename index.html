@@ -7,15 +7,16 @@
 </head>
 
 <body>
-  <h1>Интернет-магазин «Девайс»</h1>
+  <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
   <header class="header">
-    <div class="logo">
-      <a><img src="img/logo-device.svg" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
-    </div>
 
-    <form class="search">
-      <input type="search" placeholder="Поиск по сайту">
-      <input class="visually-hidden" type="submit" value="Найти">
+    <a class="logo" href="index.html">
+      <img src="img/logo-device.svg" width="200" height="21" alt="Логотип интернет-магазина «Девайс»" aria-label="На главную Device">
+    </a>
+
+    <form class="search" action="#" method="GET">
+      <input class="search-field" type="search" name="search-field" placeholder="Поиск по сайту">
+      <button class="search-submit" type="submit" value="Найти">Найти</button>
     </form>
 
     <ul>
@@ -79,9 +80,9 @@
 
   <footer class="footer">
 
-    <div class="logo">
-      <a><img src="img/logo-device.svg" width="200" height="21" alt="Логотип интернет-магазина «Девайс»"></a>
-    </div>
+    <a class="logo" href="index.html">
+      <img src="img/logo-device.svg" width="200" height="21" alt="Логотип интернет-магазина «Девайс»" aria-label="На главную Device">
+    </a>
 
     <ul>
       <li><a href="#">Войти</a></li>
@@ -145,5 +146,35 @@
     </div>
 
   </footer>
+
+  <section class="modal-write-us visually-hidden">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="form-write-us" action="https://echo.htmlacademy.ru/courses" method="post">
+      <label for="name">Ваше имя:</label>
+      <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
+
+      <label for="email">Ваш e-mail:</label>
+      <input type="email" name="email" id="email" placeholder="email@example.com" pattern="{a-z}{0-9}@{a-z}{0-9}.{a-z}"/>
+
+      <label for="letter">Текст письма:</label>
+      <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+
+      <button class="button form-submit" type="submit" value="Отправить">
+        <span class="visually-hidden">Отправить</span>
+      </button>
+
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть форму обратной связи</span>
+      </button>
+    </form>
+  </section>
+
+  <section class="modal-map visually-hidden">
+    <h2 class="visually-hidden">Карта с адресом магазина</h2>
+    <img src="img/map-big.webp" alt="адрес офиса Device: г. Москва, ул. Строителей, 15">
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть карту</span>
+    </button>
+  </section>
 </body>
 </html>
