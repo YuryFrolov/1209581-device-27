@@ -15,15 +15,14 @@
   src: url("../fonts/web/gilroylight.woff2") format("woff2"),
     url("../fonts/web/gilroylight.woff") format("woff");
 }
-
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
@@ -167,8 +166,11 @@ a {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 3.6px;
+
+}
+.nav-list-item:not(.wrap) {
+  text-transform: uppercase;
 }
 
 .wrap {
@@ -177,13 +179,9 @@ a {
   line-height: 36px;
   font-weight: 300;
   color: #000;
-  text-transform: lowercase;
   letter-spacing: 0.15px;
 }
 
-.wrap-item .link::first-letter {
-  text-transform: uppercase; /*Как вернуть списку товаров большую букву?*/
-}
 /*index.html main class="container"*/
 
 .container .about-us,
@@ -277,19 +275,13 @@ a {
   opacity: 0.3;
 }
 /*footer:social*/
-.social-item .facebook,
-.instagram,
-.twitter {
+.social-item {
   opacity: 0.3;
 }
-.social-item .facebook:hover,
-.instagram:hover,
-.twitter:hover {
+.social-item:hover {
   opacity: 0.6;
 }
-.social-item .facebook:active,
-.instagram:active,
-.twitter:active {
+.social-item:active{
   opacity: 0.1;
 }
 
@@ -334,7 +326,8 @@ a {
   letter-spacing: 0.91px;
 }
 
-.price {
+.price-article,
+.bluetooth-article {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
