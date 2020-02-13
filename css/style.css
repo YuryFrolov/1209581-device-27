@@ -49,7 +49,7 @@ a {
 }
 /*header*/
 .header {
-  background-color: #f7e296;
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .logo:hover {
@@ -64,6 +64,7 @@ a {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
+  width: 355px;
   opacity: 0.3;
   border-bottom: 2px solid transparent;
   outline: none;
@@ -161,26 +162,27 @@ a {
   opacity: 0.3;
 }
 
-.nav-list-item {
+.nav-list-item:first-child,
+.nav-list-item:last-child,
+.nav-list .catalog-link {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   letter-spacing: 3.6px;
-
-}
-.nav-list-item:not(.wrap) {
   text-transform: uppercase;
 }
 
-.wrap {
+.nav-list-item .wrap-item {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
   color: #000;
   letter-spacing: 0.15px;
+  text-transform: none;
 }
+
 
 /*index.html main class="container"*/
 
@@ -362,3 +364,132 @@ a {
   font-weight: 300;
   line-height: 24px;
 }
+/*LAYOUT:HEADER*/
+
+.center-wrap {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  min-height: 299px;
+  margin-top: 40px;
+  border: 1px solid transparent;
+}
+
+.header .logo {
+  position: absolute;
+  top: -20px;
+  margin-left: 60px;
+}
+
+.search-and-user-links-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  margin-top: 34px;
+
+}
+
+.header-column {
+  display: flex;
+  align-items: center;
+}
+
+.header-column:first-child {
+  min-width: 440px;
+}
+
+.header-column:last-child {
+  min-width: 500px;
+  display: flex;
+}
+.header .nav {
+padding-top: 50px;
+padding-bottom: 42px;
+padding-left:60px;
+padding-right:60px;
+}
+.user-nav {
+  padding: 0;
+  display: flex;
+}
+
+.nav-list {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.nav-list-item {
+  display:flex;
+}
+
+.header .nav-list-item:last-child {
+  margin-left: auto;
+}
+
+.wrap {
+order: 1;
+}
+
+.wrap-item {
+  display: flex;
+}
+
+/*.container: about-us, contacts*/
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about-wrap {
+  display: flex;
+}
+
+.about-us {
+  min-width: 462px;
+  margin-right: 139px;
+}
+
+.contacts {
+  min-width: 560px;
+}
+
+/* footer*/
+.footer-wrap {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+
+.footer-top,
+.footer-center,
+.footer-bottom {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .nav,
+.footer .nav-list {
+  padding: 0;
+}
+
+.footer-center .nav-list-item {
+  margin: 0 auto;
+}
+
+.social {
+  padding:0;
+  display: flex;
+  min-width: 141px;
+  min-height: 32px;
+  justify-content: space-between;
+}
+
+
+
+
+
+
