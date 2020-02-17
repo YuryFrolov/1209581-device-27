@@ -128,6 +128,7 @@ a {
 
 .breadcrumbs {
   list-style-type: none;
+  padding: 0;
 }
 
 .sidebar .color-choise,
@@ -437,16 +438,14 @@ order: 1;
   display: flex;
 }
 
-/*.container: about-us, contacts*/
-.container {
+/*index.html about-wrap*/
+
+.centering-wrap {
   width: 1160px;
   margin: 0 auto;
-}
-
-.about-wrap {
   display: flex;
 }
-
+/*.container: about-us, contacts*/
 .about-us {
   min-width: 462px;
   margin-right: 139px;
@@ -481,15 +480,47 @@ order: 1;
 }
 
 .social {
-  padding:0;
+  padding: 0;
   display: flex;
   min-width: 141px;
   min-height: 32px;
   justify-content: space-between;
 }
 
+/* CATALOG:заголовок и крошки*/
+.monopods,
+.breadcrumbs {
+  margin-left: 201px;
+}
 
+.breadcrumbs {
+  display: flex;
+}
 
+.filter-and-products-wrap {
+  display: flex;
+}
+.filter-and-products-wrap .products {
+  display: flex;
+}
 
+.sidebar {
+  width: 468px;
+  background-color: #eeeeee;
+}
+
+.sidebar .search {
+  margin-left: 60px;
+}
+
+.filter {
+  min-height: 70px;
+  margin: 0;
+  background-color: #dcdcdc;
+}
+
+.products {
+  margin-left: 73px;
+}
 
 

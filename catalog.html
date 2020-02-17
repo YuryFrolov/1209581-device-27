@@ -49,8 +49,10 @@
           <li class="user-nav-item">
             <a class="link" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z" />
-                <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z" />
+                <path
+                  d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z" />
+                <path
+                  d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z" />
               </svg>
               Корзина
             </a>
@@ -96,72 +98,81 @@
       <li class="breadcrumbs-current"><a class="link">Моноподы для селфи</a></li>
     </ul>
 
-    <aside class="sidebar">
-      <h2 class="filter">Фильтр:</h2>
-      <form class="search">
-        <h3 class="price-article">Стоимость</h3>
-        <div class="color">
-          <h3 class="color">Цвет</h3>
-          <ul class="color-choise">
-            <li class="choise-item"><input type="radio" id="color-сhoise-1"><label for="color-сhoise-1">Черный</label></li>
-            <li class="choise-item"><input type="radio" id="color-сhoise-2"><label for="color-сhoise-2">Белый</label></li>
-            <li class="choise-item"><input type="radio" id="color-сhoise-3"><label for="color-сhoise-3">Синий</label></li>
-            <li class="choise-item"><input type="radio" id="color-сhoise-4"><label for="color-сhoise-4">Красный</label></li>
-            <li class="choise-item"><input type="radio" id="color-сhoise-5"><label for="color-сhoise-5">Розовый</label></li>
-          </ul>
-        </div>
+    <div class="filter-and-products-wrap">
 
-        <div class="bluetooth">
-          <h3 class="bluetooth-article">Bluetooth</h3>
-          <ul class="bluetooth-choise">
-            <li>
-              <input type="radio" id="bluetooth-сhoise-1" name="value-1" checked>
-              <label class="choise-item" for="bluetooth-сhoise-1">Есть</label>
-            </li>
-            <li>
-              <input type="radio" id="bluetooth-сhoise-2" name="value-1">
-              <label class="choise-item" for="bluetooth-сhoise-2">Нет</label>
-            </li>
-          </ul>
-        </div>
-        <button type="submit">Показать</button>
-      </form>
+      <aside class="sidebar">
 
-    </aside>
+        <h2 class="filter"><span class="filter-span">Фильтр:</span></h2>
 
-    <section class="products">
-      <h2 class="visually-hidden">Каталог моноподов для селфи</h2>
-      <article class="products-item">
-        <h1 class="visually-hidden"><a href="#">Первый товар</a></h1>
-        <img src="img/products-item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"
-          aria-label="Любительская селфи-палка">
-        <a href="#" class="products-name">Любительская селфи-палка</a>
-        <span class="products-price">500 руб.</span>
-      </article>
+        <form class="search">
+          <h3 class="price-article">Стоимость</h3>
+          <div class="color">
+            <h3 class="color">Цвет</h3>
+            <ul class="color-choise">
+              <li class="choise-item"><input type="radio" id="color-сhoise-1"><label for="color-сhoise-1">Черный</label>
+              </li>
+              <li class="choise-item"><input type="radio" id="color-сhoise-2"><label for="color-сhoise-2">Белый</label>
+              </li>
+              <li class="choise-item"><input type="radio" id="color-сhoise-3"><label for="color-сhoise-3">Синий</label>
+              </li>
+              <li class="choise-item"><input type="radio" id="color-сhoise-4"><label
+                  for="color-сhoise-4">Красный</label></li>
+              <li class="choise-item"><input type="radio" id="color-сhoise-5"><label
+                  for="color-сhoise-5">Розовый</label></li>
+            </ul>
+          </div>
 
-      <article class="products-item">
-        <h1 class="visually-hidden"><a href="#">Второй товар</a></h1>
-        <img src="img/products-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-        <a href="#" class="products-name">Профессиональная селфи-палка</a href="">
-        <span class="products-price">1 500 руб.</span>
-      </article>
+          <div class="bluetooth">
+            <h3 class="bluetooth-article">Bluetooth</h3>
+            <ul class="bluetooth-choise">
+              <li>
+                <input type="radio" id="bluetooth-сhoise-1" name="value-1" checked>
+                <label class="choise-item" for="bluetooth-сhoise-1">Есть</label>
+              </li>
+              <li>
+                <input type="radio" id="bluetooth-сhoise-2" name="value-1">
+                <label class="choise-item" for="bluetooth-сhoise-2">Нет</label>
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Показать</button>
+        </form>
 
-      <article class="products-item">
-        <h1 class="visually-hidden"><a href="#">Третий товар</a></h1>
-        <img src="img/products-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-        <a href="#" class="products-name">Непотопляемая селфи-палка</a>
-        <span class="products-price">2 500 руб.</span>
-      </article>
+      </aside>
 
-      <article class="products-item">
-        <h1 class="visually-hidden"><a href="#">Четвёртый товар</a></h1>
-        <img src="img/products-item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-        <a href="#" class="products-name">Селфи-палка «Следуй за мной»</a>
-        <span class="products-price">4 900 руб.</span>
-      </article>
+      <section class="products">
+        <h2 class="visually-hidden">Каталог моноподов для селфи</h2>
+        <article class="products-item">
+          <h1 class="visually-hidden"><a href="#">Первый товар</a></h1>
+          <img src="img/products-item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"
+            aria-label="Любительская селфи-палка">
+          <a href="#" class="products-name">Любительская селфи-палка</a>
+          <span class="products-price">500 руб.</span>
+        </article>
 
-    </section>
+        <article class="products-item">
+          <h1 class="visually-hidden"><a href="#">Второй товар</a></h1>
+          <img src="img/products-item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+          <a href="#" class="products-name">Профессиональная селфи-палка</a href="">
+          <span class="products-price">1 500 руб.</span>
+        </article>
 
+        <article class="products-item">
+          <h1 class="visually-hidden"><a href="#">Третий товар</a></h1>
+          <img src="img/products-item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+          <a href="#" class="products-name">Непотопляемая селфи-палка</a>
+          <span class="products-price">2 500 руб.</span>
+        </article>
+
+        <article class="products-item">
+          <h1 class="visually-hidden"><a href="#">Четвёртый товар</a></h1>
+          <img src="img/products-item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+          <a href="#" class="products-name">Селфи-палка «Следуй за мной»</a>
+          <span class="products-price">4 900 руб.</span>
+        </article>
+
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
